@@ -1,0 +1,83 @@
+*{margin: 0;}
+
+body {
+    background-color: #4aadaa;
+}
+
+@keyframes asp {
+    from {background-color: #5ce1e6;}
+    to {background-color: white;}
+}
+
+
+.menu{
+    list-style:none;
+    float: bottom;
+    top: 25px;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+}
+
+.menu a{
+    position:center;
+    float:left;
+    border-right:1px solid #c0c0c0;
+}
+
+.menu li a { color:#fff; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+    background:#5ce1e6;
+    color:#000000;
+    animation-name: asp;
+    animation-duration: 4s;
+}
+
+.menu li  ul{
+    position: center;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    display:block;
+    width:150px;
+}
+
+.cd {
+    background-color: #5ce1e6;
+    font-family: "Bebas Neue";
+    padding: 40px;
+    font-size: 35px;
+}
+
+.pg {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    padding: 15px;
+}
+
+.galeria{
+    width: 920px
+
+}
+
+.coluna{
+    float: left;
+    width: 50%;
+    position: center;
+.galeria::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
